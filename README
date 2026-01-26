@@ -1,0 +1,14 @@
+1) Task + intended audience (1–2 sentences)
+    The intended task is to let sudents submit a tutoring request. The audience is CS324 students who need help and want to provide their email and a short description of what they need help with. 
+
+2) Semantic structure you used (list your main tags)
+    <html>, <head>, <body>, <header>, <nav>, <main>, <section>, <form>, <label>, <input>, <textarea>, <button>, <footer>
+
+3) One accessibility choice you made
+    I added aria-live="polite" to the form status message so screen readers annouce an update after the user submits their form.
+
+4) One layout/responsive choice you made
+    To ensure readabilty, is set my 'main' to 'max-width: 60ch' with centered margins and then had padding on text to make sure it didn't pan out too far on large screens.
+
+5) Your JS interaction: what it does + where the state lives
+    My JS interaction validates the email and the help description. The email input must include "@" and ".", and the help field must be at least 10 characters. If validations failed, the page displayed error messages pertaining to the invalid inputs (#email-error and/or #help-error). If it were to pass, it would show a comfirmation message in #form-message. The state lives in the form inputs #email and #help and the feedback state is through the message elements (#email-error, #help-error, and #form-message).
